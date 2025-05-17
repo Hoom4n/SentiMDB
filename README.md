@@ -20,7 +20,7 @@ SentiMDB is a lightweight, production-ready Sentiment Analysis Pipeline based on
 
 ### Option 1: Online Demo
 
-You can try the online demo on HuggingFace Spaces: <a href="https://huggingface.co/spaces/hoom4n/SentiMDB>https://huggingface.co/spaces/hoom4n/SentiMDB</a>
+You can try the online demo on HuggingFace Spaces: <a href="https://huggingface.co/spaces/hoom4n/SentiMDB">https://huggingface.co/spaces/hoom4n/SentiMDB</a>
 
 ### Option 2: Local Setup
 
