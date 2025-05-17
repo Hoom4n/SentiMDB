@@ -26,7 +26,7 @@ You can try the online demo on HuggingFace Spaces: <a href="https://huggingface.
 
 ```bash
 # clone project repository
-git clone https://github.com/yourusername/SentiMDB.git
+git clone https://github.com/hoom4n/SentiMDB.git
 cd SentiMDB
 
 # Create a virtual environment
@@ -46,7 +46,7 @@ Access applicaion at: http://localhost:5000
 
 ```bash
 # clone project repository
-git clone https://github.com/yourusername/SentiMDB.git
+git clone https://github.com/hoom4n/SentiMDB.git
 cd SentiMDB
 
 # Build image and start container for the first time
