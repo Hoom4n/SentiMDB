@@ -1,6 +1,6 @@
 # SentiMDB: Sentiment Analysis for IMDB Movie Reviews
   
-SentiMDB is a lightweight, production-ready Sentiment Analysis Pipeline based on IMDb movie reviews. It features a Flask web app, a Dockerized setup for easy deployment, and a Hugging Face Spaces-powered online demo. The project includes a comprehensive <a href="https://nbviewer.org/github/hoom4n/SentiMDB/blob/main/notebook/SentiMDB.ipynb">Jupyter Notebook</a>, offering a guide to English Text Preprocessing and detailing the full Machine Learning Development process, including Model Selection, Error Analysis, and Fine-Tuning. By leveraging classic machine learning tools alone, the model achieved 91.67% prediction accuracy.
+SentiMDB is a lightweight, production-ready Sentiment Analysis Pipeline based on IMDb movie reviews. It features a Flask web app, a Dockerized setup for easy deployment, and a Hugging Face Spaces-powered online demo. The project includes a comprehensive <a href="https://nbviewer.org/github/hoom4n/SentiMDB/blob/main/notebook/SentiMDB.ipynb">Jupyter Notebook</a>, offering a guide to English Text Preprocessing and detailing the full Machine Learning Development process, including Model Selection, Error Analysis, and Fine-Tuning. By leveraging classic machine learning tools alone, final model achieved 91.67% prediction accuracy.
 
 ![SentiMDB Home](images/senimdb_home.png)
 
