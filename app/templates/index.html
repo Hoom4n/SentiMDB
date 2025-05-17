@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SentiMDB </title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('form');
+      const spinner = document.getElementById('spinner');
+      form.addEventListener('submit', () => {
+        spinner.style.display = 'block';
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>SentiMDB</h1>
+    <p class="subtitle">
+     <br><i> An End-to-End Deployment-Ready Sentiment Analysis Pipeline based on IMDb movie reviews with 91.67% prediction accuracy</i>
+    </p>
+  </header>
+
+  <main class="split">
+    <!-- LEFT PANEL -->
+    <section class="left-panel">
+      <div class="pipeline-container">
+        <h3 class="pipeline-title">Pipeline</h3>
+        <div class="pipeline">
+          <div class="step step-input">📝 Input Text</div>
+          <div class="arrow">→</div>
+          <div class="step step-pre">🔧 TextPreprocessor</div>
+          <div class="arrow">→</div>
+          <div class="step step-tfidf">📊 TF‑IDF</div>
+          <div class="arrow">→</div>
+          <div class="step step-logreg">🤖 Logistic Regressor</div>
+        </div>
+      </div>
+
+      <form method="POST">
+        <textarea name="text" placeholder="Type your movie review..." required>{{ text or '' }}</textarea>
+
+        <div class="options">
+          <input type="checkbox" id="show_preprocessed" name="show_preprocessed" {{ 'checked' if show_pre else '' }}>
+          <label for="show_preprocessed">Show preprocessed text</label>
+        </div>
+
+        <button type="submit">Analyze</button>
+        <div id="spinner" class="spinner"></div>
+      </form>
+    </section>
+
+    <!-- RIGHT PANEL -->
+    <section class="right-panel">
+      {% if result %}
+        <div class="result-card">
+          <h2>
+            {% if sentiment == 'Positive' %}
+              😀 Positive
+            {% else %}
+              😞 Negative
+            {% endif %}
+          </h2>
+          <p><strong>Prediction Confidence:</strong> {{ confidence }}%</p>
+          {% if show_pre %}
+            <div class="pre-box">
+              <strong>Preprocessed:</strong><br>
+              {{ preprocessed }}
+            </div>
+          {% endif %}
+        </div>
+        <p class="github-link">
+          🔗 <a href="https://github.com/Hoom4n/SentiMDB" target="_blank">Project GitHub Link</a>
+        </p>
+      {% else %}
+        <p class="hint">Enter some text on the left and hit “Analyze” to reveal its mood.</p>
+      {% endif %}
+    </section>
+  </main>
+</body>
+</html>

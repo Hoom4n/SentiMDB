@@ -1,0 +1,5 @@
+scikit-learn==1.6.1
+joblib==1.5.0
+hoomanmltk==0.1.0
+nltk==3.9.1
+gradio
