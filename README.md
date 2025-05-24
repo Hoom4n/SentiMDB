@@ -14,7 +14,7 @@ SentiMDB is a lightweight, production-ready Sentiment Analysis Pipeline based on
 - **Model Optimization Techniques** 
   Error analysis, Hyperparameter tuning with Optuna.
 - **Production-Ready Deployment**  
-  Streamlit Online Demo, Flask web app, Dockerized.
+  HuggingFace Spaces Online Demo, Flask web app, Dockerized.
 
 ## 🛠️ Installation 
 
