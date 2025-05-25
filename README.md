@@ -5,7 +5,7 @@ SentiMDB is a lightweight, production-ready Sentiment Analysis Pipeline based on
 ![SentiMDB Home](images/senimdb_home.png)
 
 
-## ✅ Features 
+## ✅ Key Features 
 
 - **End-to-End Lightweight Sentiment Analysis Pipeline**  
   A complete and efficient sentiment analysis solution, with the entire pipeline packaged in just 1.7MB.
